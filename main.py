@@ -13,11 +13,11 @@
 # pyinstaller --onefile --windowed Your_File_Name.py
 # You Got a amazing error
 # use the following line of code in you .py file
-# import sys
-# import os
-# if getattr(sys, 'frozen', False):
-#     sys.stdout = open(os.devnull, 'w')
-#     sys.stderr = open("error.log", 'w')
+import sys
+import os
+if getattr(sys, 'frozen', False):
+    sys.stdout = open(os.devnull, 'w')
+    sys.stderr = open("error.log", 'w')
 
 
 # TODO Fifth Step
